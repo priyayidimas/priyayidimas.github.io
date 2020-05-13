@@ -1,0 +1,26 @@
+{
+    "short_name": "Reiseziel",
+    "name": "Reiseziel",
+    "description": "Solusi Cepat Travel",
+    "theme_color": "#2196F3",
+    "background_color": "#64B5F6",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "assets/images/icons/plane.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "assets/images/icons/plane-2x.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "assets/images/icons/plane-3x.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/index.html"
+  }
