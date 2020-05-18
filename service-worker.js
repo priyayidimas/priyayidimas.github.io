@@ -30,7 +30,6 @@ self.addEventListener('fetch', function(event) {
 	event.respondWith(
 		caches.match(event.request, {cacheName:CACHE_NAME}).then(function(response) {
 			if (response) {
-                console.log("From Cache");
 				return response;
 			}
 			var fetchRequest = event.request.clone();
@@ -42,7 +41,6 @@ self.addEventListener('fetch', function(event) {
 				caches.open(CACHE_NAME).then(function(cache) {
 					cache.put(event.request, responseToCache);
                 });
-                console.log("FROM URL");
 				return response;
 			});
 	  	})
