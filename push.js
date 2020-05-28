@@ -12,10 +12,10 @@ webPush.setVapidDetails(
    vapidKeys.privateKey
 )
 var pushSubscription = {
-   "endpoint": "https://fcm.googleapis.com/fcm/send/dv-DSvV2_nE:APA91bFwVBjCocxitmOogMKGxjqnVSLKjQHtDGJ_Ix9kKyBXq-90sj3WBoWzq-zT2-06OjTACaNxp5IH9zqMuwQ_AVE5qViO-4EFJeonC-NOeeYkXA_J8qvKmjEnYEDtsnC3hf_uM6mQ",
+   "endpoint": "https://fcm.googleapis.com/fcm/send/ea3Es9TzVqs:APA91bG7e4ISx7pf-2h0LJM-t1wEUbQFnWKfXZAtouGG03JiHhIGe0dG6gqoXdh07d8YtJMPdgu_wy2LjKlT89-95cmvvVoRyfJLp39YwFXrgXBn7GyNSm4NALnIMK844UBR3saLh2RL",
    "keys": {
-       "p256dh": "BP+yp1VHqvW6AqzeO7FixbpOts+49yVW7PaisBzUaffw4WQVI4E6PZrV/dXs6LUE5nJ0Eus6tA7J3P9FyoFnq1I=",
-       "auth": "2MbDFqOUA6md4vckQoA8AQ=="
+       "p256dh": "BHZDlRiPvOawX84MhDfhTssK80D5reVX4UC06W7eZqLXrLZteGgD7q1g7zz7OfQSGONsY3hw6YLSdHzyOY/o0bk=",
+       "auth": "r+Wg80F0jmj5/xAK1+87Hg=="
    }
 };
 var payload = 'Congrats! Push Notification Received!';
@@ -28,4 +28,6 @@ webPush.sendNotification(
    pushSubscription,
    payload,
    options
-);
+).catch(err => {
+   console.error(err);
+});

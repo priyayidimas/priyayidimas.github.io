@@ -1,14 +1,14 @@
 {
-  "name": "world-cup-pwa",
-  "short_name": "world-cup-pwa",
+  "name": "Weltster",
+  "short_name": "Weltster",
   "description": "World Cup Subscription App",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
   "orientation": "any",
-  "start_url": "/?homescreen=1",
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "start_url": "../index.html",
+  "background_color": "#D30208",
+  "theme_color": "#D30208",
   "icons": [
     {
       "src": "/assets/android-chrome-36x36.png",
@@ -55,5 +55,6 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "gcm_sender_id": "618186156839"
 }
